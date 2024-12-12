@@ -110,7 +110,7 @@ body{
     overflow: auto;
     display: grid;
     height: 90vh;
-    grid-template-columns: [left] 18% [mid] 82% ;
+    grid-template-columns: [left] 20% [mid] 80% ;
 }
 .vmain{
     overflow: auto;
@@ -198,6 +198,7 @@ margin-left: auto;}
 }
 .side{
     position: fixed;
+    width: 15%;
     grid-column: left;
     background-color: var(--bgc);
     height: 90vh;
@@ -216,7 +217,7 @@ margin-left: auto;}
     gap: 30px;
     grid-column: mid;
     flex-wrap: wrap;
-    margin: 30px;
+    margin-top: 30px;
     background-color: var(--bgc);
 
 }
@@ -303,7 +304,7 @@ grid-template-columns: [a]15% [b]75% [c]10%;
     height: 230px;
     background-color: rgba(128, 128, 128, 0);
     border-radius: 15px;
-    margin-left: 150px;
+    margin-left: 30px;
     display: flex;
 
 }
@@ -316,7 +317,7 @@ grid-template-columns: [a]15% [b]75% [c]10%;
     font-size: 28px;
     font-weight: 700;
     color: white;
-    margin-left:150px;
+    margin-left:50px;
     height: 50px;
     margin-right: 500px;
     
@@ -325,7 +326,7 @@ grid-template-columns: [a]15% [b]75% [c]10%;
     font-size: 25px;
     font-weight: 600;
     color: white;
-    margin-left:150px;
+    margin-left:50px;
     height: 50px;
     margin-right: 500px;
    
@@ -358,7 +359,7 @@ display: inline;
 .dropdown{
     display: flex !important    ;
     flex-direction: column;
-    margin-left: 150px;
+    margin-left: 30px;
     width: 87vw;
     background-color: var(--bgc);
 }
@@ -376,7 +377,6 @@ background-color: #222222;
 }
 .playlist {
     display: flex;
-    padding-left: 80px;
     flex-wrap: wrap;
 }
 .video {
