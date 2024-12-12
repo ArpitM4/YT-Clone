@@ -106,14 +106,96 @@ body{
     background-color: var(--gr) !important;
 }
 .main{
-        position: fixed;
-        overflow: auto;
-
+    position: fixed;
+    overflow: auto;
     display: grid;
     height: 90vh;
     grid-template-columns: [left] 13% [mid] 87% ;
 }
+.vmain{
+    overflow: auto;
+    display: grid;
+    height: 90vh;
+    grid-template-columns:  [vmid] 70% [vright] 30% ;
+}
+.vside{
+    grid-column: vright;
+    background-color: var(--bgc);
+    height: 90vh;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: thin;
+    overflow: auto;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+.vmid{
+    display: flex;
+    flex-direction: column;
+    grid-column: vmid;    
+    flex-wrap: wrap;
+    margin: 30px;
+    padding-left:2rem ;
+    gap: 5px;  
+    background-color: var(--bgc);
+    
+}
+.sub{
+text-decoration: none;
+padding-top:9px;
+padding-inline: 1.5rem;
+margin-top: 8px;
+font-weight: 500;
+margin-left: 5px;
+cursor: pointer;
+height: 35px;
+background-color: var(--gr);
+color: white;
+border-radius: 40px;}
+.disc{
+    margin-top: 1rem;
+    padding:1rem;
+    color: white;
+    background-color: var(--gr);
+    border-radius: 20px;
+}
+.disc a:visited{
+    text-decoration: none;
+    color: lightskyblue;
+}
+.com{
+    height: 40px;
+    width: 50vw;
+    font-size: 15px;
+    font-weight: 520;
+    background-color: var(--bgc);
+    outline: none;
+    color: white;
+    padding-left: 20px;
+    border-top: 0; 
+    border-inline: 0px solid var(--gr);
+}
+.comn{display: flex;
+    flex-direction: row;
+}
+.end{
+    display: inline-flex;
+margin-left: auto;}
 
+.info{
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.info .spa{
+    margin-left: 20px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+
+}
+.vmid iframe{
+    border-radius: 10px;
+}
 .side{
     position: fixed;
     grid-column: left;
@@ -127,7 +209,6 @@ body{
 }
 .side:hover{
     scrollbar-color: #717171a1 #ababab00;
-
 }
 
 .mid{
@@ -202,4 +283,142 @@ grid-template-columns: [a]15% [b]75% [c]10%;
         margin-top: 15px;
     color: white;
 
+}
+.ss2{
+    display: inline;
+}
+#lat{
+    height: 5px;
+    width:auto;
+    
+    color: white;
+}
+.ss{
+    margin-right:1070px;
+    display:inline;
+}
+.card1{
+    width:700px;
+    cursor: pointer;
+    height: 230px;
+    background-color: rgba(128, 128, 128, 0);
+    border-radius: 15px;
+    margin-left: 150px;
+    display: flex;
+
+}
+.card1 img {
+    width: 300px;
+    max-height: 80%;
+    border-radius: 13px;
+}
+.hist{
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    margin-left:150px;
+    height: 50px;
+    margin-right: 500px;
+    
+}
+.today{
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    margin-left:150px;
+    height: 50px;
+    margin-right: 500px;
+   
+}
+.spa1{
+    display: inline;
+    margin-top: 3px;  
+}   
+.dgrid1{
+display: inline;
+}
+.title1{
+    margin-left: 20px;
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    display: block;   
+}
+.views1, .cname1{
+    margin-left: 20px;
+    color: grey;
+}
+#val{
+    background-color: #FFFFFF1A;
+    color: #f1f1f1;
+    font-size: 20px;
+    border-radius: 8px;
+    block-size: 40px;
+}
+.dropdown{
+    display: flex !important    ;
+    flex-direction: column;
+    margin-left: 150px;
+    width: 87vw;
+    background-color: var(--bgc);
+}
+.dropdown select{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    width:170px;
+}
+.dropdown select option{
+    outline: none;
+background-color: #222222;
+
+}
+.playlist {
+    display: flex;
+    padding-left: 80px;
+    flex-wrap: wrap;
+}
+.video {
+    margin-top: 25px;
+    background-color: #222222;
+    border-top: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-left: 25px;
+    height: fit-content;
+}
+
+
+.video img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-info {
+    padding: 1rem;
+}
+
+.video-info h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.video-info p {
+    margin: 0;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.titleg{
+    cursor: pointer;
+    margin-top: 4px;
+    color: grey;
+    font-weight: 500;   
+    margin-inline: 10px;
+    font-size: larger;
 }

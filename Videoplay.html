@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://www.youtube.com/s/desktop/e0e63f49/img/favicon_32x32.png"
+        type="image/x-icon">
+    <title>Youtube | VideoPlayer</title>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="star">
+            <button title="Mic" class="mic" style="  border: none;background-color: var(--bgc);">
+                <svg width="25px" height="25px" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    stroke="#0f0f0f">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M3 7C3 6.44771 3.44772 6 4 6H24C24.5523 6 25 6.44771 25 7C25 7.55229 24.5523 8 24 8H4C3.44772 8 3 7.55229 3 7Z"
+                            fill="#ffffff"></path>
+                        <path
+                            d="M3 14C3 13.4477 3.44772 13 4 13H24C24.5523 13 25 13.4477 25 14C25 14.5523 24.5523 15 24 15H4C3.44772 15 3 14.5523 3 14Z"
+                            fill="#ffffff"></path>
+                        <path
+                            d="M4 20C3.44772 20 3 20.4477 3 21C3 21.5523 3.44772 22 4 22H24C24.5523 22 25 21.5523 25 21C25 20.4477 24.5523 20 24 20H4Z"
+                            fill="#ffffff"></path>
+                    </g>
+                </svg>
+            </button>
+            <a href="/index.html">
+            <img style="cursor: pointer;"  src="YTlogo.png" alt="" srcset="">
+        </a>
+        </div>
+
+        <div class="input">
+            <input placeholder="Search" type="text">
+            <button title="Search" class="search">
+                <!-- <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16.6725 16.6412L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>    <script src="script.js"></script> -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="24px" width="24px" viewBox="0 0 24 24"
+                    focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit;margin-left:25%">
+                    <path clip-rule="evenodd"
+                        d="M16.296 16.996a8 8 0 11.707-.708l3.909 3.91-.707.707-3.909-3.909zM18 11a7 7 0 00-14 0 7 7 0 1014 0z"
+                        fill-rule="evenodd"></path>
+                </svg>
+
+            </button>
+            <button title="Mic" class="mic">
+                <svg viewBox="0 0 24 24" fill="none" width="20px" height="20px" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M8 5C8 2.79086 9.79086 1 12 1C14.2091 1 16 2.79086 16 5V12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12V5Z"
+                            fill="#ffffff"></path>
+                        <path
+                            d="M6.25 11.8438V12C6.25 13.525 6.8558 14.9875 7.93414 16.0659C9.01247 17.1442 10.475 17.75 12 17.75C13.525 17.75 14.9875 17.1442 16.0659 16.0659C17.1442 14.9875 17.75 13.525 17.75 12V11.8438C17.75 11.2915 18.1977 10.8438 18.75 10.8438H19.25C19.8023 10.8438 20.25 11.2915 20.25 11.8437V12C20.25 14.188 19.3808 16.2865 17.8336 17.8336C16.5842 19.0831 14.9753 19.8903 13.25 20.1548V22C13.25 22.5523 12.8023 23 12.25 23H11.75C11.1977 23 10.75 22.5523 10.75 22V20.1548C9.02471 19.8903 7.41579 19.0831 6.16637 17.8336C4.61919 16.2865 3.75 14.188 3.75 12V11.8438C3.75 11.2915 4.19772 10.8438 4.75 10.8438H5.25C5.80228 10.8438 6.25 11.2915 6.25 11.8438Z"
+                            fill="#ffffff"></path>
+                    </g>
+                </svg>
+            </button>
+        </div>
+
+        <div class="f end">
+            <button title="Mic" class="mic"
+                style="  height: 40px;width: 40px;;border: none;background-color: var(--bgc);">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="white"
+                    style="pointer-events: none; display: inherit; width: 70%; height: 70%;" viewBox="0 0 24 24"
+                    focusable="false" aria-hidden="true">
+                    <path
+                        d="M14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2zm3-7H3v12h14v-6.39l4 1.83V8.56l-4 1.83V6m1-1v3.83L22 7v8l-4-1.83V19H2V5h16z">
+                    </path>
+                </svg>
+            </button>
+
+            <button title="Mic" class="mic"
+                style="  height: 40px;width: 40px;;border: none;background-color: var(--bgc);">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="white" enable-background="new 0 0 24 24" height="24"
+                    viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true"
+                    style="pointer-events: none; display: inherit; width: 70%; height: 70%;">
+                    <path
+                        d="M10 20h4c0 1.1-.9 2-2 2s-2-.9-2-2zm10-2.65V19H4v-1.65l2-1.88v-5.15C6 7.4 7.56 5.1 10 4.34v-.38c0-1.42 1.49-2.5 2.99-1.76.65.32 1.01 1.03 1.01 1.76v.39c2.44.75 4 3.06 4 5.98v5.15l2 1.87zm-1 .42-2-1.88v-5.47c0-2.47-1.19-4.36-3.13-5.1-1.26-.53-2.64-.5-3.84.03C8.15 6.11 7 7.99 7 10.42v5.47l-2 1.88V18h14v-.23z">
+                    </path>
+                </svg>
+            </button>
+
+            <span title="Mic" class="im">
+                <img src="https://yt3.ggpht.com/Uy23fBOIKo9vHrG1qz3_q_PBnOTLgy7Vix5MQ0b0zE5Qsprqs5YKHdpboTiQ9OCTw1R2bQskk-s=s88-c-k-c0x00ffffff-no-rj"
+                    alt="pfp" srcset="">
+            </span>
+
+        </div>
+
+
+    </div>
+
+    <div class="vmain">
+        <div class="vmid">
+            <iframe width="100%" height="539" src="https://www.youtube.com/embed/fED50IVzutU"
+                title="Goodbye Gas Generators | Tesla Powerwall" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3 class="title">Goodbye Gas Generators | Tesla Powerwall</h3>
+            <div class="info">
+                <div class="dgrid" style="gap: 5px;">
+                    <img src="https://yt3.ggpht.com/p89RToB7j2iu9BYhK2Zn6vLkxJXYC9cAbxfJ0eMvUd4jrsyRQtuYIvinn8N2H6utyeBKcrvlhSE=s68-c-k-c0x00ffffff-no-rj"
+                        alt="">
+                    <div class="spa">
+                        <span class="title">Tesla</span>
+                        <span style="font-size: 12px;" class="views">2.9M Subscribers </span>
+                    </div>
+
+                </div>
+
+                <span class="sub">Subscribe</span>
+                <div class="end">
+                    <span class="sub ">Like</span>
+                    <span class="sub ">Dislike</span>
+                    <span class="sub ">Download</span>
+                    <span class="sub ">Share</span>
+                    <span class="sub ">:</span>
+                </div>
+            </div>
+
+            <div class="disc">
+                <b>
+                    394,552 views Nov 22, 2024
+                </b>
+                <br>
+                No Gas Tanks. No Maintenance. No Noise. No Outages. See why these Powerwall owners ditched their backup
+                generators and never looked back.
+                <br>
+                <br>
+                Powerwall vs Backup Generator – <a href="">https://www.tesla.com/support/energy/...</a>
+                <br>
+                NY Tesla Certified Installers:
+                <br>
+                -New York State Solar Farm – https://nyssf.com/
+                -EmPower Solar – https://www.empower-solar.com/en/
+                Transcript
+                Follow along using the transcript. <b>..more </b>
+            </div>
+            <br>
+            <h3 class="title">⠀1,552 Comments</h3>
+            <br>
+            <div class="comn">
+                <span title="Mic" style="margin-right: 10px;" class="im">
+                    <img src="https://yt3.ggpht.com/Uy23fBOIKo9vHrG1qz3_q_PBnOTLgy7Vix5MQ0b0zE5Qsprqs5YKHdpboTiQ9OCTw1R2bQskk-s=s88-c-k-c0x00ffffff-no-rj"
+                        alt="pfp" srcset="">
+                </span>
+                <input type="text" placeholder="Add a comment..." name="" id="com" class="com">
+            </div>
+
+            <div style="margin-block: 15px;" class="comn">
+                <span title="Mic" style="margin-right: 10px;" class="im">
+                    <img src="https://yt3.ggpht.com/Uy23fBOIKo9vHrG1qz3_q_PBnOTLgy7Vix5MQ0b0zE5Qsprqs5YKHdpboTiQ9OCTw1R2bQskk-s=s88-c-k-c0x00ffffff-no-rj"
+                        alt="pfp" srcset="">
+                </span>
+                <div style="display: block;">
+
+                    <div>
+                        <span style="font-size: 15px;" class="title">@Arpit_Maurya</span>
+                        <span style="font-size: 12px;" class="views">2 Weeks Ago</span>
+                    </div>
+
+                    <div style="color: rgba(255, 255, 255, 0.859);">
+                        Powerwall great for short outage,
+                        but still need generator for long-term outage.
+                    </div>
+                </div>
+
+            </div>
+            <div style="margin-block: 15px;" class="comn">
+                <span title="Mic" style="margin-right: 10px;" class="im">
+                    <img src="https://yt3.ggpht.com/qNP1XBbHuL67O1XnBmLZIgHPGvsBUKAAVGsPbu-1ezg6FOmo4BjHGUqz9V2cwR-fOl-xenEVoJM=s88-c-k-c0x00ffffff-no-rj"
+                        alt="pfp" srcset="">
+                </span>
+                <div style="display: block;">
+
+                    <div>
+                        <span style="font-size: 15px;" class="title">@User_2</span>
+                        <span style="font-size: 12px;" class="views">1 Weeks Ago</span>
+                    </div>
+
+                    <div style="color: rgba(255, 255, 255, 0.859);">
+                        Another Comment by the User number XYZ.
+                    </div>
+                </div>
+
+            </div>
+            <div style="margin-block: 15px;" class="comn">
+                <span title="Mic" style="margin-right: 10px;" class="im">
+                    <img src="https://yt3.ggpht.com/qNP1XBbHuL67O1XnBmLZIgHPGvsBUKAAVGsPbu-1ezg6FOmo4BjHGUqz9V2cwR-fOl-xenEVoJM=s88-c-k-c0x00ffffff-no-rj"
+                        alt="pfp" srcset="">
+                </span>
+                <div style="display: block;">
+
+                    <div>
+                        <span style="font-size: 15px;" class="title">@User_2</span>
+                        <span style="font-size: 12px;" class="views">1 Weeks Ago</span>
+                    </div>
+
+                    <div style="color: rgba(255, 255, 255, 0.859);">
+                        Another Comment by the User number XYZ.
+                    </div>
+                </div>
+
+            </div>
+            <div style="margin-block: 15px;" class="comn">
+                <span title="Mic" style="margin-right: 10px;" class="im">
+                    <img src="https://yt3.ggpht.com/qNP1XBbHuL67O1XnBmLZIgHPGvsBUKAAVGsPbu-1ezg6FOmo4BjHGUqz9V2cwR-fOl-xenEVoJM=s88-c-k-c0x00ffffff-no-rj"
+                        alt="pfp" srcset="">
+                </span>
+                <div style="display: block;">
+
+                    <div>
+                        <span style="font-size: 15px;" class="title">@User_2</span>
+                        <span style="font-size: 12px;" class="views">1 Weeks Ago</span>
+                    </div>
+
+                    <div style="color: rgba(255, 255, 255, 0.859);">
+                        Another Comment by the User number XYZ.
+                    </div>
+                </div>
+
+            </div>
+            <div style="margin-block: 15px;" class="comn">
+                <span title="Mic" style="margin-right: 10px;" class="im">
+                    <img src="https://yt3.ggpht.com/qNP1XBbHuL67O1XnBmLZIgHPGvsBUKAAVGsPbu-1ezg6FOmo4BjHGUqz9V2cwR-fOl-xenEVoJM=s88-c-k-c0x00ffffff-no-rj"
+                        alt="pfp" srcset="">
+                </span>
+                <div style="display: block;">
+
+                    <div>
+                        <span style="font-size: 15px;" class="title">@User_2</span>
+                        <span style="font-size: 12px;" class="views">1 Weeks Ago</span>
+                    </div>
+
+                    <div style="color: rgba(255, 255, 255, 0.859);">
+                        Another Comment by the User number XYZ.
+                    </div>
+                </div>
+
+            </div>
+            <div style="margin-block: 15px;" class="comn">
+                <span title="Mic" style="margin-right: 10px;" class="im">
+                    <img src="https://yt3.ggpht.com/qNP1XBbHuL67O1XnBmLZIgHPGvsBUKAAVGsPbu-1ezg6FOmo4BjHGUqz9V2cwR-fOl-xenEVoJM=s88-c-k-c0x00ffffff-no-rj"
+                        alt="pfp" srcset="">
+                </span>
+                <div style="display: block;">
+
+                    <div>
+                        <span style="font-size: 15px;" class="title">@User_2</span>
+                        <span style="font-size: 12px;" class="views">1 Weeks Ago</span>
+                    </div>
+
+                    <div style="color: rgba(255, 255, 255, 0.859);">
+                        Another Comment by the User number XYZ.
+                    </div>
+                </div>
+
+            </div>
+            <div style="margin-block: 15px;" class="comn">
+                <span title="Mic" style="margin-right: 10px;" class="im">
+                    <img src="https://yt3.ggpht.com/qNP1XBbHuL67O1XnBmLZIgHPGvsBUKAAVGsPbu-1ezg6FOmo4BjHGUqz9V2cwR-fOl-xenEVoJM=s88-c-k-c0x00ffffff-no-rj"
+                        alt="pfp" srcset="">
+                </span>
+                <div style="display: block;">
+
+                    <div>
+                        <span style="font-size: 15px;" class="title">@User_2</span>
+                        <span style="font-size: 12px;" class="views">1 Weeks Ago</span>
+                    </div>
+
+                    <div style="color: rgba(255, 255, 255, 0.859);">
+                        Another Comment by the User number XYZ.
+                    </div>
+                </div>
+
+            </div>
+            <div style="margin-block: 15px;" class="comn">
+                <span title="Mic" style="margin-right: 10px;" class="im">
+                    <img src="https://yt3.ggpht.com/qNP1XBbHuL67O1XnBmLZIgHPGvsBUKAAVGsPbu-1ezg6FOmo4BjHGUqz9V2cwR-fOl-xenEVoJM=s88-c-k-c0x00ffffff-no-rj"
+                        alt="pfp" srcset="">
+                </span>
+                <div style="display: block;">
+
+                    <div>
+                        <span style="font-size: 15px;" class="title">@User_2</span>
+                        <span style="font-size: 12px;" class="views">1 Weeks Ago</span>
+                    </div>
+
+                    <div style="color: rgba(255, 255, 255, 0.859);">
+                        Another Comment by the User number XYZ.
+                    </div>
+                </div>
+
+            </div>
+            <div style="margin-block: 15px;" class="comn">
+                <span title="Mic" style="margin-right: 10px;" class="im">
+                    <img src="https://yt3.ggpht.com/qNP1XBbHuL67O1XnBmLZIgHPGvsBUKAAVGsPbu-1ezg6FOmo4BjHGUqz9V2cwR-fOl-xenEVoJM=s88-c-k-c0x00ffffff-no-rj"
+                        alt="pfp" srcset="">
+                </span>
+                <div style="display: block;">
+
+                    <div>
+                        <span style="font-size: 15px;" class="title">@User_2</span>
+                        <span style="font-size: 12px;" class="views">1 Weeks Ago</span>
+                    </div>
+
+                    <div style="color: rgba(255, 255, 255, 0.859);">
+                        Another Comment by the User number XYZ.
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="vside">
+            <div style="margin-block: 15px;" class="comn">
+                <img style="width: 180px; height: 100px; border-radius: 10px; margin: 10px;"
+                    src="https://i.ytimg.com/vi/n7Pwpxj3eQg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCNoBT7muXOL4LdvmAbeY7CXDMy3w"
+                    alt="pfp" srcset="">
+                <div style="display: block;">
+                    <div class="title" style="color: rgba(255, 255, 255, 0.859);">
+                        The Title Of the Recommended Video No - X
+                    </div>
+                    <span style="font-size: 15px;" class="title">Channel Name</span>
+                    <div>
+                        <span style="font-size: 12px;" class="views">1 Weeks Ago</span>
+                        <span style="font-size: 12px;" class="views">| 4.9M Views</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div style="margin-block: 15px;" class="comn">
+                <img style="width: 180px; height: 100px; border-radius: 10px; margin: 10px;"
+                    src="https://picsum.photos/360/200" alt="pfp" srcset="">
+                <div style="display: block;">
+                    <div class="title" style="color: rgba(255, 255, 255, 0.859);">
+                        The Title Of the Recommended Video No - X
+                    </div>
+                    <span style="font-size: 15px;" class="title">Channel Name</span>
+                    <div>
+                        <span style="font-size: 12px;" class="views">1 Weeks Ago</span>
+                        <span style="font-size: 12px;" class="views">| 4.9M Views</span>
+                    </div>
+
+                </div>
+
+            </div>
+            <div style="margin-block: 15px;" class="comn">
+                <img style="width: 180px; height: 100px; border-radius: 10px; margin: 10px;"
+                    src="https://i.ytimg.com/an_webp/sDUOky6TYtw/mqdefault_6s.webp?du=3000&sqp=CKzg5roG&rs=AOn4CLA4Ob1x0-DlCIdbTb_zeW7Ie_rF-w"
+                    alt="pfp" srcset="">
+                <div style="display: block;">
+                    <div class="title" style="color: rgba(255, 255, 255, 0.859);">
+                        The Title Of the Recommended Video No - X
+                    </div>
+                    <span style="font-size: 15px;" class="title">Channel Name</span>
+                    <div>
+                        <span style="font-size: 12px;" class="views">1 Weeks Ago</span>
+                        <span style="font-size: 12px;" class="views">| 4.9M Views</span>
+                    </div>
+
+                </div>
+
+            </div>
+            <div style="margin-block: 15px;" class="comn">
+                <img style="width: 180px; height: 100px; border-radius: 10px; margin: 10px;"
+                    src="https://picsum.photos/365/200" alt="pfp" srcset="">
+                <div style="display: block;">
+                    <div class="title" style="color: rgba(255, 255, 255, 0.859);">
+                        The Title Of the Recommended Video No - X
+                    </div>
+                    <span style="font-size: 15px;" class="title">Channel Name</span>
+                    <div>
+                        <span style="font-size: 12px;" class="views">1 Weeks Ago</span>
+                        <span style="font-size: 12px;" class="views">| 4.9M Views</span>
+                    </div>
+
+                </div>
+
+            </div>
+            <div style="margin-block: 15px;" class="comn">
+                <img style="width: 180px; height: 100px; border-radius: 10px; margin: 10px;" src="https://picsum.photos/380/200"
+                    alt="pfp" srcset="">
+            <div style="display: block;">
+                <div class="title" style="color: rgba(255, 255, 255, 0.859);">
+                    The Title Of the Recommended Video No - X
+                </div>
+                <span style="font-size: 15px;" class="title">Channel Name</span>
+                <div>
+                    <span style="font-size: 12px;" class="views">1 Weeks Ago</span>
+                    <span style="font-size: 12px;" class="views">| 4.9M Views</span>
+                </div>
+    
+            </div>
+    
+        </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
