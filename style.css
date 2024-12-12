@@ -110,7 +110,7 @@ body{
     overflow: auto;
     display: grid;
     height: 90vh;
-    grid-template-columns: [left] 13% [mid] 87% ;
+    grid-template-columns: [left] 18% [mid] 82% ;
 }
 .vmain{
     overflow: auto;
